@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-4xl mt-12 font-medium mb-10"
+        >Welcome to Personal Bank</h1>
+    </header>
+    <main>
+        <section class="rounded-3xl bg-blue-400 w-1/3 h-64 mx-auto p-5 flex flex-col justify-center items-center">
+            <h1 class="font-bold text-2xl">Please Login</h1>
+            <input id="email" class="w-1/2 p-3 rounded-xl border border-black-700 block my-3" type="email" placeholder="Write your email" required>
+            <input id="password" class="w-1/2 p-3 rounded-xl border border-black-700" type="password" placeholder="Write your password" required>
+            <button id="login-button" class="btn btn-primary bg-black text-xl px-8 text-white mt-3 hover:bg-blue">Login</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
