@@ -17,31 +17,33 @@
         <section class="grid grid-cols-3 gap-4">
             <div class="rounded-lg py-8 pl-6 text-2xl bg-green-600 text-white">
                 <h1 class="mb-3">Deposit</h1>
-                <h2 class="text-5xl">$00</h2>
+                <h2 class="text-5xl">$<span id="display-deposit">00</span></h2>
             </div>
             <div class="rounded-lg py-8 pl-6 text-2xl bg-amber-600 text-white">
                 <h1 class="mb-3">Withdraw</h1>
-                <h2 class="text-5xl">$00</h2>
+                <h2 class="text-5xl">$<span id="display-withdraw">00</span></h2>
             </div>
             <div class="rounded-lg py-8 pl-6 text-2xl bg-teal-500 text-white">
                 <h1 class="mb-3">Balance</h1>
-                <h2 class="text-5xl">$00</h2>
+                <h2 class="text-5xl">$<span id="display-balance">1200</span></h2>
             </div>
         </section>
         <!-- input Section -->
         <section class="grid grid-cols-2 mt-10 gap-4">
             <div class="rounded-lg py-8 pl-6 text-2xl bg-sky-700 text-white">
                 <h1 class="mb-3">Please Deposit</h1>
-                <input class="text-black py-2 block w-9/12 rounded-lg" type="text">
-                <button class="bg-orange-500 py-2 px-5 rounded-lg mt-4">Deposit</button>
+                <input id="deposit-field" class="text-black py-2 block w-9/12 rounded-lg" type="text">
+                <button id="deposit-button" class="bg-orange-500 py-2 px-5 rounded-lg mt-4">Deposit</button>
             </div>
             <div class="rounded-lg py-8 pl-6 text-2xl bg-fuchsia-600 text-white">
                 <h1 class="mb-3">Please Withdraw</h1>
-                <input class="text-black py-2 block w-9/12 rounded-lg" type="text">
-                <button class="bg-orange-500 py-2 px-5 rounded-lg mt-4">withdraw</button>
+                <input id="withdraw-field" class="text-black py-2 block w-9/12 rounded-lg" type="text">
+                <button id="withdraw-button" class="bg-orange-500 py-2 px-5 rounded-lg mt-4">withdraw</button>
             </div>
         </section>
     </main>
     
-</body>
+    <script src="deposit.js"></script>
+    <script src="withdraw.js"></script>
+</body> 
 </html>
